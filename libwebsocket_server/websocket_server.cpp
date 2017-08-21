@@ -7,8 +7,7 @@
 void ws::on_message(server *s, websocketpp::connection_hdl hdl, message_ptr msg) {
 
 }
-ws::websocket_server::websocket_server(websocket_server_config& config) {
-  std::cout << "Hello constructor()" << std::endl;
+ws::websocket_server::websocket_server(websocket_server_config& config) : config(config){
   _server.set_access_channels(websocketpp::log::alevel::all);
   _server.clear_access_channels(websocketpp::log::alevel::frame_payload);
 
@@ -18,8 +17,10 @@ ws::websocket_server::websocket_server(websocket_server_config& config) {
   // Register our message handler
   //_server.set_message_handler(std::bind(&config.on_message, &_server, ::_1, ::_2));
   _server.set_message_handler(bind(config.on_message, &_server,::_1,::_2));
+}
 
-  // Listen on port 9002
+void ws::websocket_server::start(){
+  // Listen on port config.port
   _server.listen(config.port);
 
   // Start the server accept loop

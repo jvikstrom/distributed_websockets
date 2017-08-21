@@ -2,13 +2,13 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
+      <config projectName="distributed_websockets" targetName="gmock" />
+      <config projectName="distributed_websockets" targetName="lib" />
+      <config projectName="distributed_websockets" targetName="gmock_main" />
       <config projectName="distributed_websockets" targetName="libwebsocket_server" />
       <config projectName="distributed_websockets" targetName="gtest_main" />
-      <config projectName="distributed_websockets" targetName="gtest" />
-      <config projectName="distributed_websockets" targetName="gmock_main" />
-      <config projectName="distributed_websockets" targetName="lib" />
       <config projectName="distributed_websockets" targetName="distributed_websockets_server" />
-      <config projectName="distributed_websockets" targetName="gmock" />
+      <config projectName="distributed_websockets" targetName="gtest" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -29,16 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/websocket_server/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -62,8 +52,8 @@
       <file leaf-file-name="websocket_server.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libwebsocket_server/websocket_server.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="33" column="3" lean-forward="false" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+            <state relative-caret-position="344">
+              <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -79,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="websocket_server.hpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="websocket_server.hpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libwebsocket_server/websocket_server.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+            <state relative-caret-position="306">
+              <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
               <folding>
                 <element signature="e#146#165#0" expanded="true" />
               </folding>
@@ -104,8 +94,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/websocket_server/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="252">
+              <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding>
                 <element signature="e#40#59#0" expanded="true" />
               </folding>
@@ -113,12 +103,35 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="install.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nginx/install.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="nginx.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nginx/nginx.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="432">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="install.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nginx/install.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="90">
+                <caret line="5" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="71" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -135,15 +148,16 @@
         <option value="$PROJECT_DIR$/test/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/test/test_websocket_server/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/websocket_server/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/nginx/install.md" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/lib/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/nginx/nginx.conf" />
         <option value="$PROJECT_DIR$/libwebsocket_server/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/libwebsocket_server/websocket_server.hpp" />
         <option value="$PROJECT_DIR$/libwebsocket_server/websocket_server_config.hpp" />
+        <option value="$PROJECT_DIR$/libwebsocket_server/websocket_server.hpp" />
         <option value="$PROJECT_DIR$/websocket_server/main.cpp" />
         <option value="$PROJECT_DIR$/libwebsocket_server/websocket_server.cpp" />
+        <option value="$PROJECT_DIR$/nginx/nginx.conf" />
+        <option value="$PROJECT_DIR$/nginx/install.sh" />
+        <option value="$PROJECT_DIR$/nginx/install.md" />
       </list>
     </option>
   </component>
@@ -280,12 +294,12 @@
       <option name="presentableId" value="Default" />
       <updated>1503310982055</updated>
       <workItem from="1503310983364" duration="3856000" />
-      <workItem from="1503314884664" duration="3971000" />
+      <workItem from="1503314884664" duration="8443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7827000" />
+    <option name="totallyTimeSpent" value="12299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -412,13 +426,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/install.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/websocket/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -447,14 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/nginx.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libwebsocket_server/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -471,31 +470,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websocket_server/main.cpp">
+    <entry file="file://$PROJECT_DIR$/libwebsocket_server/websocket_server.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="306">
+          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
           <folding>
-            <element signature="e#40#59#0" expanded="true" />
+            <element signature="e#146#165#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libwebsocket_server/websocket_server.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="33" column="3" lean-forward="false" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+        <state relative-caret-position="344">
+          <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libwebsocket_server/websocket_server.hpp">
+    <entry file="file://$PROJECT_DIR$/websocket_server/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        <state relative-caret-position="252">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
-            <element signature="e#146#165#0" expanded="true" />
+            <element signature="e#40#59#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/install.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/nginx.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/install.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="5" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="71" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

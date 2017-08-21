@@ -14,11 +14,14 @@
 // pull out the type of messages sent by our config
 
 namespace ws{
+
   void on_message(server* s, websocketpp::connection_hdl hdl, message_ptr msg);
 class websocket_server {
+  websocket_server_config& config;
   server _server;
 public:
   websocket_server(websocket_server_config& config);
+  void start();
 };
 }
 
