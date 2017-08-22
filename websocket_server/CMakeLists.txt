@@ -5,7 +5,8 @@ set(distributed_websockets_server_SRC
     endpoints/base_endpoint.hpp
     endpoints/login.hpp
     endpoints/register.hpp
-    endpoints/list_users.hpp)
+    endpoints/list_users.hpp
+    endpoints/send.hpp)
 add_executable(distributed_websockets_server ${distributed_websockets_server_SRC})
 
 target_link_libraries(distributed_websockets_server libwebsocket_server lib libredis)
