@@ -18,7 +18,9 @@ class websocket_endpoints {
   std::map<std::string, std::unique_ptr<base_endpoint>> endpoints;
   ws::redis_adapter adapter;
 public:
-  explicit websocket_endpoints(ws::redis_adapter adapter) : adapter(std::move(adapter)){}
+  explicit websocket_endpoints(ws::redis_adapter& adapter) : adapter((adapter)){
+    this->adapter.generate_new_id();
+  }
   void handle_message(server *s, websocketpp::connection_hdl hdl, message_ptr msg);
   void add_endpoint(std::string cmd, std::unique_ptr<base_endpoint> endpoint);
 };

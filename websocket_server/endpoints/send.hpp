@@ -10,7 +10,7 @@ namespace ws{
 class send_endpoint : public base_endpoint{
   virtual void handle_message(server* s, websocketpp::connection_hdl hdl, json msg) override{
     if(msg["target"] == nullptr || msg["msg"] == nullptr){
-      std::string ans = R"({"error": "Requires both 'target' and 'msg' to be set"})";
+      std::string ans = R"({"cmd": "error", "error": "Requires both 'target' and 'msg' to be set"})";
       s->send(hdl, ans, websocketpp::frame::opcode::text);
       return;
     }

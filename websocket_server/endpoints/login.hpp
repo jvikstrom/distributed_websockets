@@ -7,7 +7,7 @@ namespace ws{
 class login_endpoint : public base_endpoint{
   virtual void handle_message(server* s, websocketpp::connection_hdl hdl, json msg) override{
     if(msg["username"] == nullptr || msg["password"] == nullptr){
-      std::string ans = R"({"error": "Requires both 'username' and 'password' to be set"})";
+      std::string ans = R"({"cmd": "error", "error": "Requires both 'username' and 'password' to be set"})";
       s->send(hdl, ans, websocketpp::frame::opcode::text);
       return;
     }
