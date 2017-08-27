@@ -1,6 +1,8 @@
 set(libredis_SRC
     redis_adapter.cpp
     redis_adapter.hpp
+    remote_server.cpp
+    remote_server.hpp
     )
 
 add_library(libredis STATIC

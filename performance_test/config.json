@@ -1,0 +1,9 @@
+{
+  "host": "localhost",
+  "port": "8010",
+  "numConnections": 2000,
+  "numRequestsLow": 10,
+  "numRequestMedium": 20,
+  "numRequestHigh": 50,
+  "numRequestVeryHigh": 100
+}

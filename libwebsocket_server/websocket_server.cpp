@@ -4,6 +4,7 @@
 
 #include "websocket_server.hpp"
 
+ws::websocket_server_config ws::websocket_server::default_config;
 void ws::on_message(server *s, websocketpp::connection_hdl hdl, message_ptr msg) {
 
 }
@@ -17,6 +18,8 @@ ws::websocket_server::websocket_server(websocket_server_config& config) : config
   // Register our message handler
   //_server.set_message_handler(std::bind(&config.on_message, &_server, ::_1, ::_2));
   _server.set_message_handler(bind(config.on_message, &_server,::_1,::_2));
+  _server.set_open_handler(bind(config.on_open, &_server,::_1));
+  _server.set_close_handler(bind(config.on_close, &_server,::_1));
 }
 
 void ws::websocket_server::start(){

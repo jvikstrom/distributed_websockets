@@ -9,6 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async": "^2.5.0",
+    "asyncinterval": "0.0.7",
+    "lodash": "^4.17.4",
+    "uuid": "^3.1.0",
     "ws": "^3.1.0"
   }
 }
